@@ -39,31 +39,64 @@ public class Hero {
         e.wounded(damage);
     }
 
+    /**
+     * 名前を取得するメソッド。
+     * 
+     */
     public String getName() {
         return this.name;
     }
+    /**
+     * ヒットポイントを取得するメソッド。
+     * 
+     */
     public int getHitPoint() {
         return this.hitPoint;
     }
+    /**
+     * Enemyを攻撃するメソッド。
+     * attackフィールドを参照するアセスタ。
+     */
     public int getAttack() {
         return this.attack;
     }
+    /**
+     * 死ぬかどうかを取得するメソッド。
+     * 
+     */
     public boolean getDead() {
         return this.dead;
     }
 
+    /**
+     * 名前をセットするメソッド。
+     * 
+     */
     public void setName(String name) {
         this.name = name;
     }
+    /**
+     * 攻撃を設定するメソッド。
+     * 
+     */
     public void setHitPoint(int hitPoint) {
         this.hitPoint = hitPoint;
     }
+    /**
+     * 攻撃力を設定するメソッド。
+     * 
+     */
     public void setAttack(int attack) {
         this.attack = attack;
     }
+    /**
+     * 生きているかどうかを設定するメソッド。
+     * 
+     */
     public void setDead(boolean dead) {
         this.dead = dead;
     }
+    
     /**
      * 自身へ攻撃されたときのダメージ処理をするメソッド。
      * 指定されたダメージを hitPoint から引き、死亡判定を行う。
