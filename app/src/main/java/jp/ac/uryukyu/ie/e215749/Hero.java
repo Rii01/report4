@@ -47,7 +47,7 @@ public class Hero extends LivingThing {
      * attackフィールドを参照するアセスタ。
      */
     public int getAttack() {
-        return this.attack;
+        return attack;
     }
     /**
      * 死ぬかどうかを取得するメソッド。
